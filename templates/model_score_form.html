@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>model_score</title>
+</head>
+<script>
+    function check(){
+        form2.submit()
+    }
+</script>
+<body>
+    <h1>model_score</h1>
+    <form action="/model_score" method="POST" name="form2">
+    <table border="0" align="center">
+    <tr>
+        <td colspan="2">
+        <input id="submit_btn" type="button" value="모델 성능" onclick="check()"> 
+        <input type="reset" value="취소">
+    </tr>
+    </table>
+    </form>
+
+    <h5  border="0" align="center" > Model 예측 모델 성능 Train SCORE : {{ result1 }} </h5>
+    <h5  border="0" align="center" > Model 예측 모델 성능 Train MAE : {{ result2 }} </h5>
+    <h5  border="0" align="center" > Model 예측 모델 성능 Train MSE : {{ result3 }} </h5>
+    <h5  border="0" align="center" > Model 예측 모델 성능 Train RMSE : {{ result4 }} </h5>
+    
+    <h5  border="0" align="center" > Model 예측 모델 성능 Test SCORE : {{ result5 }} </h5>
+    <h5  border="0" align="center" > Model 예측 모델 성능 Test MAE : {{ result6 }} </h5>
+    <h5  border="0" align="center" > Model 예측 모델 성능 Test MSE : {{ result7 }} </h5>
+    <h5  border="0" align="center" > Model 예측 모델 성능 Test RMSE : {{ result8 }} </h5>
+
+    <a href="/" align="center" > Main Page </a>
+</body>
+</html>
